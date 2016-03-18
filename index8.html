@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>多种方式绑定菜单</title>
+	</head>
+	<body>
+		<h1>多种方式绑定菜单</h1>
+		<p>
+			onclick 单击<br>
+			ondClick 双击<br>
+			oncontextmenu<br>
+			
+			文本菜单<br>
+				onmouseover<br>
+				onmouseout<br>
+				onmousedown
+				onmouseup
+				onmousemove
+			
+			键盘<br>
+				keypress<br>
+				keyup<br>
+				keydown<br>
+			文档<br>
+				load<br>
+				unloadv
+				beforeunload<br>
+			表单<br>
+				focus 焦点<br>
+				blur 丢掉焦点<br>
+				submit <br>
+				change 改变<br>
+		</p>
+		
+		<div id="ddd">
+			js事件编程
+		</div>
+		<input type="button" value="test" id="bt01">
+		<script>
+			function show(){
+				var obj = document.getElementById("ddd");
+				alert(ddd.innerText);
+			}
+			//获取bt01对象
+			var bt01 = document.getElementById("bt01");
+			bt01.onclick = show;
+			//对象.事件  = 事件处理函数
+			//两种方法
+//			bt01.onclick = function(){
+//				alert("hahaha");
+//			}
+			
+		</script>
+	</body>
+</html>

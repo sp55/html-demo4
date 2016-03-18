@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>设置标签的显示和隐藏</title>
+	</head>
+	<body>
+		<h1>设置标签的显示和隐藏</h1>
+		<div id="content"> 没事的话搜搜啊</div>
+		<a href="javascript:show()">显示</a>
+		<a href="javascript:hidden()">隐藏</a>
+		<script>
+			function show(){
+				var nowDiv = document.getElementById("content");
+				nowDiv.style.visibility = "visible";//显示
+			}
+			function hidden(){
+				var nowDiv = document.getElementById("content");
+				nowDiv.style.visibility = "hidden";//显示
+			}
+		</script>
+	</body>
+</html>
